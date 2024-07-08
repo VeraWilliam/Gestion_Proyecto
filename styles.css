@@ -5,7 +5,7 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url('/Img/Planta.png');
+  background-image: url('https://github.com/VeraWilliam/Gestion_Proyecto/blob/Proyecto-v1/Img/Planta.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
