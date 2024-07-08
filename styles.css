@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/Img/Planta.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* imagen de fondo fija */
+  height: 100vh;
+  width: 100vw;
+  background-position: center; /* Opcional, pero recomendado para que la imagen se centre */
+}
+
+header {
+  background-color: #268629c9;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px; /* Cambia el tamaño de las letras a 36px */
+  margin: 0;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.sensor-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 200px;
+  background-color: #f7f7f7;
+  padding: 50px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.sensor-name {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 160%;
+  text-align: center; /* Agrega esta propiedad para centrar horizontalmente */
+}
+
+.sensor-value {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Agrega esta propiedad para centrar verticalmente */
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #268629c9;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Agrega esta propiedad para centrar horizontalmente */
+}
+
+.graph {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #00000098;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 10px;
+  position: relative; /* Agregamos posición relativa para que los spans se ubiquen correctamente */
+}
+
+.bar {
+  height: 30px;
+  background-color: #268629c9;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out; /* Agregamos transición para que la barra se mueva suavemente */
+}
+
+.min-value, .max-value {
+  position: absolute;
+  font-size: 12px;
+  color: #000000;
+  top: 50%; /* Agregamos esta propiedad para centrar verticalmente */
+  transform: translateY(-50%); /* Agregamos esta propiedad para centrar verticalmente */
+}
+
+.min-value {
+  left: 10px; /* Agregamos un poco de espacio a la izquierda */
+  text-align: left;
+}
+
+.max-value {
+  right: 10px; /* Agregamos un poco de espacio a la derecha */
+  text-align: right;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.btn {
+  background-color: #268629c9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #268629c9;
+}

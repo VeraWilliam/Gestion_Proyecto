@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monitor de Sensores Arduino</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Monitor de Sensores Arduino</h1>
+  </header>
+  <div class="container">
+    <div class="sensor-box">
+      <div class="sensor-name">Temperatura °C</div>
+      <div class="sensor-value">
+        <span id="temperature" class="circle">00</span>
+        <div class="graph">
+          <div class="bar" style="width: 50%;">
+            <span class="min-value">0°C</span>
+            <span class="max-value">36°C</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sensor-box">
+      <div class="sensor-name">Humedad %</div>
+      <div class="sensor-value">
+        <span id="humidity"  class="circle">00</span>
+        <div class="graph">
+          <div class="bar" style="width: 60%;">
+            <span class="min-value">0%</span>
+            <span class="max-value">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sensor-box">
+      <div class="sensor-name">Humedad del Suelo %</div>
+      <div class="sensor-value">
+        <span id="soil-moisture" class="circle">00</span>
+        <div class="graph">
+          <div class="bar" style="width: 50%;">
+            <span class="min-value">0</span>
+            <span class="max-value">100%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button id="connectButton" class="btn">Conectar a Arduino</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
